@@ -5,12 +5,13 @@ namespace AYStore.Models
     public class AYStoreDbContext : DbContext
     {
 
-        public AYStoreDbContext(DbContextOptions<AYStoreDbContext> options): base(options)
+        public AYStoreDbContext(DbContextOptions<AYStoreDbContext> options) : base(options)
         {
-           
+
         }
 
-       public DbSet<Product> Products { get; set; }
-       public DbSet<Category> Categories { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<ShoppingCartItem> ShoppingCartItems { get; set; }
     }
 }

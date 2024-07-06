@@ -1,0 +1,21 @@
+﻿@model Product
+
+<div class="col-md-4 mb-4">
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product Image">
+        <div class="card-body">
+            <a class="btn btn-secondary"
+               asp-controller="ShoppingCart"
+               asp-action="AddToShoppingCart"
+               asp-route-productId="@Model.ProductId"> + Add to cart</a>
+            <h5 class="card-title">
+                <a asp-controller="Product"
+                   asp-action="Details"
+                   asp-route-id="@Model.ProductId"
+                   class="product-link">@Model.Name</a>
+            </h5>
+            <p class="card-text">@Model.Description</p>
+            <p class="card-text"><strong>Price:</strong> @Model.Price.ToString("C")</p>
+        </div>
+    </div>
+</div>

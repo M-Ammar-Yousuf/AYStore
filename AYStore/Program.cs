@@ -7,6 +7,10 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IShoppingCart, ShoppingCart>(ShoppingCart.GetCart);
+
+builder.Services.AddSession();
+builder.Services.AddHttpContextAccessor();
 
 builder.Services.AddDbContext<AYStoreDbContext>(options =>
         options.UseSqlServer(builder.Configuration["ConnectionStrings:AYStoreDbConnection"]));
@@ -14,6 +18,7 @@ builder.Services.AddDbContext<AYStoreDbContext>(options =>
 var app = builder.Build();
 
 app.UseStaticFiles();
+app.UseSession();
 
 if (app.Environment.IsDevelopment())
 {

@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AYStore", "AYStore\AYStore.csproj", "{7AF5009B-6E41-4D7A-A9ED-7659F5796264}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AYStore.Tests", "AYStore.Tests\AYStore.Tests.csproj", "{C9764E61-D5EA-4E43-9BD9-1F6637AF4CC4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{7AF5009B-6E41-4D7A-A9ED-7659F5796264}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7AF5009B-6E41-4D7A-A9ED-7659F5796264}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7AF5009B-6E41-4D7A-A9ED-7659F5796264}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9764E61-D5EA-4E43-9BD9-1F6637AF4CC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9764E61-D5EA-4E43-9BD9-1F6637AF4CC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9764E61-D5EA-4E43-9BD9-1F6637AF4CC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9764E61-D5EA-4E43-9BD9-1F6637AF4CC4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

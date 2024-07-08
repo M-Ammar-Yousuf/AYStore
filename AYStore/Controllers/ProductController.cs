@@ -44,5 +44,10 @@ namespace AYStore.Controllers
 
             return View(product);
         }
+
+        public IActionResult Search()
+        {
+            return View();
+        }
     }
 }

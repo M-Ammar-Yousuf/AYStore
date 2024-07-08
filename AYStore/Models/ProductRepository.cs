@@ -23,7 +23,7 @@ namespace AYStore.Models
 
         public IEnumerable<Product> SearchProducts(string searchQuery)
         {
-            throw new NotImplementedException();
+            return _dbContext.Products.Include(c=> c.Category).Where(f=> f.Name.Contains(searchQuery));
         }
     }
 }

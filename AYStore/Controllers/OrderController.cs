@@ -1,8 +1,10 @@
 ﻿using AYStore.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AYStore.Controllers
 {
+    [Authorize]
     public class OrderController : Controller
     {
         private readonly IShoppingCart _shoppingCart;

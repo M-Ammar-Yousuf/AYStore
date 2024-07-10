@@ -1,8 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
 namespace AYStore.Models
 {
-    public class AYStoreDbContext : DbContext
+    public class AYStoreDbContext : IdentityDbContext
     {
 
         public AYStoreDbContext(DbContextOptions<AYStoreDbContext> options) : base(options)
